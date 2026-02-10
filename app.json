@@ -4,9 +4,9 @@
     "slug": "SaralKhata",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/SKicon.png",
     "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "assetBundlePatterns": ["**/*"],
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -16,14 +16,22 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.yaaggnik.SaralKhata",
+      "edgeToEdgeEnabled": true,
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/SKicon.png",
         "backgroundColor": "#ffffff"
-      },
-      "edgeToEdgeEnabled": true
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "af275aa6-66af-47fb-9f8b-aa0f17f63ac1"
+      }
+    },
+    "owner": "yaaggnik",
+    "plugins": ["expo-notifications"]
   }
 }
